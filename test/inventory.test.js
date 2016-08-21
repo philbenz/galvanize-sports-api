@@ -20,7 +20,7 @@ describe('galvanize-sports-api : routes', () => {
   });
 
   describe('GET /inventory', () => {
-    it('should return every item in the inventory', (done) => {
+    xit('should return every item in the inventory', (done) => {
       chai.request(server).get('/inventory').end((err, res) => {
         expect(res.status).to.equal(200);
         expect(res.body).to.be.a('object');
@@ -31,7 +31,7 @@ describe('galvanize-sports-api : routes', () => {
   });
 
   describe('GET /inventory/:id', () => {
-    it('should return a single item in the inventory', (done) => {
+    xit('should return a single item in the inventory', (done) => {
       chai.request(server).get('/inventory').end((err, res) => {
         let snowboard = res.body.snowboards[0];
         let id = snowboard.id;
@@ -44,7 +44,7 @@ describe('galvanize-sports-api : routes', () => {
         });
       });
     });
-    it('should return a 404 if the item id does not match', (done) => {
+    xit('should return a 404 if the item id does not match', (done) => {
       chai.request(server).get(`/inventory/1`).end((err, res) => {
         expect(res.status).to.equal(404);
         expect(res.body).to.be.a('object');
