@@ -1,24 +1,17 @@
 {
-  "name": "galvanize-sports-api",
-  "version": "1.0.0",
+  "name": "update-me",
+  "version": "0.0.0",
   "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "./node_modules/.bin/mocha",
-    "dev": "./node_modules/.bin/nodemon"
-  },
+  "main": "gulpfile.js",
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "morgan": "^1.7.0",
-    "node-uuid": "^1.4.7",
-    "nodemon": "^1.10.2"
-  },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
-    "mocha": "^3.0.2"
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.2.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "run-sequence": "^1.2.2"
   }
 }

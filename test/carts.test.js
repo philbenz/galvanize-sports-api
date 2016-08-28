@@ -20,7 +20,7 @@ describe('galvanize-sports-api : routes', () => {
   });
 
   describe('GET /carts', () => {
-    xit('should return an empty list of the available carts', (done) => {
+    it('should return an empty list of the available carts', (done) => {
       chai.request(server).get('/carts').end((err, res) => {
         expect(res.status).to.equal(200);
         expect(res.body).to.be.a('array');
